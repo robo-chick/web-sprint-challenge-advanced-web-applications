@@ -28,9 +28,20 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain what a token is used for.
+
+A token is used to transmit information securely between a client app and a web server. 
+
 2. What steps can you take in your web apps to keep your data secure?
+
+Use tokens as credentials and not keep them longer than required. Use authorization headers. Not store sensitive session data in browser storage. 
+
 3. Describe how web servers work.
+
+The client app makes a request to the login endpoint on a web server, the server responds with a token that the client app saves locally in the browser and uses this token as an authorization header for every axios request. 
+
 4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+get, post, put delete
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
