@@ -30,12 +30,12 @@ const Login = () => {
       value: '',
     });
     axiosWithAuth()
-      .post('/api/login', state.credentials)
+      .post('/login', state.credentials)
       .then(res => {
         if (window.localStorage) {
           window.localStorage.setItem('token', res.data.payload);
         }
-        history.push('/bubble-page');
+        history.push('/colors');
       })
       .catch(err => {
         console.log('there was an error: ', err);
